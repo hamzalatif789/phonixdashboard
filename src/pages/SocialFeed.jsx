@@ -1,11 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import Socialone from "@/components/socialone";
 function SocialFeed() {
   return (
     <div>
-      <h1>i am SocialFeed</h1>
+      <Socialone/>
     </div>
-  )
+  );
 }
 
-export default SocialFeed
+export default SocialFeed;

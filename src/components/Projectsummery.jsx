@@ -62,7 +62,7 @@ const projects = [
 
 export default function ProjectTable() {
   return (
-    <div className="p-4 bg-white rounded-lg shadow">
+    <div className="p-4  rounded-lg shadow">
       <h2 className="text-xl font-semibold mb-4">Projects</h2>
       <Table>
         <TableHeader>

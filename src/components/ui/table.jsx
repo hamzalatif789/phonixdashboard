@@ -17,9 +17,9 @@ export function TableHead({ children, className = "" }) {
 }
 
 export function TableHeader({ children, className = "" }) {
-  return <thead className={`bg-gray-100 ${className}`}>{children}</thead>;
+  return <thead className={` ${className}`}>{children}</thead>;
 }
 
 export function TableRow({ children, className = "" }) {
-  return <tr className={`hover:bg-gray-50 ${className}`}>{children}</tr>;
+  return <tr className={` ${className}`}>{children}</tr>;
 }

@@ -32,7 +32,7 @@ const leadSources = [
 export default function CRMStats() {
   return (
     <div className=" ">
-      <h2 className="text-2xl font-semibold mb-4">CRM Dashboard</h2>
+      <h2 className="text-4xl font-semibold mb-4">CRM Dashboard</h2>
       <p className="text-gray-500 mb-6">Check your business growth in one place</p>
       
       <div className="flex gap-6">
@@ -62,8 +62,8 @@ export default function CRMStats() {
             <TableBody>
               {leadSources.map((source, index) => (
                 <TableRow key={index}>
-                  <TableCell className="text-gray-700">{index + 1}. {source.name}</TableCell>
-                  <TableCell className="text-gray-500 text-right">({source.count})</TableCell>
+                  <TableCell className="">{index + 1}. {source.name}</TableCell>
+                  <TableCell className=" text-right">({source.count})</TableCell>
                 </TableRow>
               ))}
             </TableBody>

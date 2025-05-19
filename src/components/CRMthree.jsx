@@ -35,7 +35,7 @@ const ContactsBySource = () => {
   };
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md flex flex-col md:flex-row justify-between">
+    <div className=" p-6   flex flex-col md:flex-row justify-between">
       {/* Left - Contact Sources */}
       <div className="w-full md:w-1/2">
         <h2 className="text-lg font-semibold">New Contacts by Source</h2>
@@ -47,7 +47,7 @@ const ContactsBySource = () => {
                 <span className="w-3 h-3 rounded-full mr-2" style={{ backgroundColor: source.color }}></span>
                 <span className="text-gray-600">{source.name}</span>
               </div>
-              <span className="text-black font-semibold">{source.value}</span>
+              <span className=" font-semibold">{source.value}</span>
             </div>
           ))}
         </div>

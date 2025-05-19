@@ -144,7 +144,7 @@ export default function ProductReviews() {
   return (
     <div className="p-4">
       <h2 className="text-2xl font-bold mb-2">Latest Reviews</h2>
-      <p className="text-gray-600 mb-4">Payment received across all channels</p>
+      <p className=" mb-4">Payment received across all channels</p>
 
       {/* Overall Rating Summary */}
       <div className="mb-4">
@@ -222,7 +222,7 @@ export default function ProductReviews() {
               <TableCell>
                 <StatusBadge status={review.status} />
               </TableCell>
-              <TableCell className="text-gray-500">{review.time}</TableCell>
+              <TableCell className="">{review.time}</TableCell>
             </TableRow>
           ))}
         </TableBody>

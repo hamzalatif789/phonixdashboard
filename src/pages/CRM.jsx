@@ -10,11 +10,11 @@ import React from "react";
 function CRM() {
   return (
     <>
-      <div className="bg-[rgb(245,247,250)] ">
+      <div className="px-[10px] pt-4 ">
         <div>
           <CRMDashboard />
         </div>
-        <div className="pt-5">
+        <div className="pt-[50px]">
           <ContactsCreatedChart />
         </div>
         <div className="pt-5">

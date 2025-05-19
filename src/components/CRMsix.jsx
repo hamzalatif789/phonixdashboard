@@ -8,7 +8,7 @@ const DealForecast = () => {
       <h2 className="text-xl font-bold">Deal Forecast - $90,303</h2>
       <p className="text-sm text-gray-500">Show what you offer here</p>
       
-      <div className="flex justify-between text-xs text-gray-600 mt-4">
+      <div className="flex justify-between text-xs  mt-4">
         <span>$21.0k</span>
         <span>$3.4k</span>
         <span>$15.1k</span>

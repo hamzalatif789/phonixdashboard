@@ -25,11 +25,11 @@ const SalesChart = () => {
   ];
 
   return (
-    <div className="p-6 bg-gray-100 rounded-lg shadow-md">
+    <div className="p-6  rounded-lg ">
       <div className="flex justify-between items-center">
         <div>
           <h1 className="text-2xl font-bold">Total Sales</h1>
-          <p className="text-gray-500">Payment received across all channels</p>
+          <p className="">Payment received across all channels</p>
         </div>
         <Select>
           <SelectTrigger className="w-[150px]">

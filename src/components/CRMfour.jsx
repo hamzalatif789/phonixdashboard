@@ -28,14 +28,14 @@ const UsersLeadsChart = () => {
   };
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md flex flex-col md:flex-row justify-between gap-6">
+    <div className=" p-6   flex flex-col md:flex-row justify-between gap-6">
       {/* New Users */}
       <div className="w-full md:w-1/2">
         <h2 className="text-lg font-semibold">New Users & Leads</h2>
         <p className="text-sm text-gray-500">Payment received across all channels</p>
         <div className="flex items-center gap-2 mt-3">
           <span className="text-blue-600 text-lg">👤</span>
-          <span className="text-gray-700 font-semibold">New Users: <strong>42</strong></span>
+          <span className=" font-semibold">New Users: <strong>42</strong></span>
           <span className="text-green-600 text-sm bg-green-100 px-2 py-1 rounded flex items-center">
             <ArrowUp size={14} className="mr-1" /> +24.5%
           </span>
@@ -47,7 +47,7 @@ const UsersLeadsChart = () => {
       <div className="w-full md:w-1/2">
         <div className="flex items-center gap-2 mt-7">
           <span className="text-blue-600 text-lg">⚡</span>
-          <span className="text-gray-700 font-semibold">New Leads: <strong>45</strong></span>
+          <span className=" font-semibold">New Leads: <strong>45</strong></span>
           <span className="text-green-600 text-sm bg-green-100 px-2 py-1 rounded flex items-center">
             <ArrowUp size={14} className="mr-1" /> +30.5%
           </span>

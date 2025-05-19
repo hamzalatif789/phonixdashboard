@@ -25,9 +25,13 @@
 }
 /* index.css */
 html {
-  @apply bg-white text-gray-900;
+  @apply bg-[#f6f7fb] text-gray-900;
 }
 
 html.dark {
   @apply bg-gray-900 text-white;
 }
+
+
+
+ 

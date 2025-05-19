@@ -11,13 +11,13 @@ import logo from "../assets/images/logo.png";
 import logo2 from "../assets/images/logo2.webp";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
-const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "Explore", href: "/explore", current: false },
-  { name: "Items Detail", href: "/items", current: false },
-  { name: "Author", href: "/author", current: false },
-  { name: "Create Yours", href: "/create", current: false },
-];
+// const navigation = [
+//   { name: "Home", href: "/", current: true },
+//   { name: "Explore", href: "/explore", current: false },
+//   { name: "Items Detail", href: "/items", current: false },
+//   { name: "Author", href: "/author", current: false },
+//   { name: "Create Yours", href: "/create", current: false },
+// ];
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

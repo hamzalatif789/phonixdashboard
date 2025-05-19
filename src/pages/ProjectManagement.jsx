@@ -6,16 +6,16 @@ import React from 'react'
 function ProjectManagement() {
   return (
     <>
-    <div>
+    <div className='pt-5'>
      <ProjectDashboard/>
     </div>
-    <div>
+    <div className='pt-5'>
       <IssuesProgressSection/>
     </div>
     <div className='pt-5'>
       <TodoActivitySection/>
     </div>
-    <div>
+    <div className='pt-5'>
       <ProjectTable/>
     </div>
     </>

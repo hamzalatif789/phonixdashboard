@@ -11,10 +11,10 @@ const RevenueTable = () => {
   ];
 
   return (
-    <div className="overflow-x-auto bg-white rounded-lg shadow-md p-4">
+    <div className="overflow-x-auto  rounded-lg shadow-md p-4">
       <h3 className="text-lg font-semibold mb-4">Top Regions by Revenue</h3>
       <table className="w-full border-collapse">
-        <thead className="bg-gray-100">
+        <thead className="">
           <tr>
             <th className="text-left p-3">Country</th>
             <th className="text-left p-3">Users</th>
@@ -24,7 +24,7 @@ const RevenueTable = () => {
         </thead>
         <tbody>
           {data.map((item, index) => (
-            <tr key={index} className="border-b hover:bg-gray-50 transition-all">
+            <tr key={index} className="border-b  transition-all">
               <td className="p-3 font-medium">{item.country}</td>
               <td className="p-3">{item.users.toLocaleString()} <span className="text-gray-500 text-sm">({(item.users / 377620 * 100).toFixed(1)}%)</span></td>
               <td className="p-3">{item.transactions} <span className="text-gray-500 text-sm">({(item.transactions / 236 * 100).toFixed(1)}%)</span></td>

@@ -5,7 +5,7 @@ import { Progress } from "@/components/ui/progress";
 
 export default function Dashboard() {
   return (
-    <div className="grid grid-cols-2 gap-4 ">
+    <div className="grid grid-cols-2 gap-4 py-6 ">
       {/* Lead Conversion Section */}
       <Card>
         <CardContent>

@@ -1,9 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Sidebar from "@/components/Sidebar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Home from "@/pages/Home";
+// import Home from "@/pages/Home";
 import Calendar from "@/pages/Calendar";
 import AddContact from "@/pages/AddContact";
 import AddProduct from "@/pages/AddProduct";
@@ -42,7 +42,9 @@ import TravelAgency from "@/pages/TravelAgency";
 import Wishlist from "@/pages/Wishlist";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(localStorage.getItem("theme") === "dark");
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("theme") === "dark"
+  );
 
   useEffect(() => {
     if (darkMode) {
@@ -68,38 +70,81 @@ function App() {
           <Sidebar />
           <div className="flex-1 p-4">
             <Routes>
-              <Route path="/" element={<Home />} />
+              {/* Redirect "/" to "/ecommerce" */}
+              <Route path="/" element={<Navigate to="/ecommerce" />} />
+
+
+              {/* <Route path="/" element={<Home />} /> */}
               <Route path="/inbox" element={<Inbox />} />
               <Route path="/ecommerce" element={<Ecommerce />} />
               <Route path="/ecommerce/admin/Customers" element={<Customer />} />
               <Route path="/calendar" element={<Calendar />} />
               <Route path="/search" element={<Search />} />
               <Route path="/settings" element={<Settings />} />
-              <Route path="/project-management" element={<ProjectManagement />} />
+              <Route
+                path="/project-management"
+                element={<ProjectManagement />}
+              />
               <Route path="/crm" element={<CRM />} />
               <Route path="/travel-agency" element={<TravelAgency />} />
               <Route path="/social-feed" element={<SocialFeed />} />
 
               {/* E-commerce Admin Pages */}
-              <Route path="/ecommerce/admin/AddProduct" element={<AddProduct />} />
+              <Route
+                path="/ecommerce/admin/AddProduct"
+                element={<AddProduct />}
+              />
               <Route path="/ecommerce/admin/Products" element={<Products />} />
-              <Route path="/ecommerce/admin/Customers" element={<Customers />} />
-              <Route path="/ecommerce/admin/CustomerDetails" element={<CustomerDetails />} />
+              <Route
+                path="/ecommerce/admin/Customers"
+                element={<Customers />}
+              />
+              <Route
+                path="/ecommerce/admin/CustomerDetails"
+                element={<CustomerDetails />}
+              />
               <Route path="/ecommerce/admin/Orders" element={<Orders />} />
-              <Route path="/ecommerce/admin/OrderDetails" element={<OrderDetails />} />
+              <Route
+                path="/ecommerce/admin/OrderDetails"
+                element={<OrderDetails />}
+              />
               <Route path="/ecommerce/admin/Refund" element={<Refund />} />
 
               {/* E-commerce Customer Pages */}
-              <Route path="/ecommerce/customer/Homepage" element={<Homepage />} />
-              <Route path="/ecommerce/customer/ProductDetails" element={<ProductDetails />} />
-              <Route path="/ecommerce/customer/ProductsFilter" element={<ProductsFilter />} />
+              <Route
+                path="/ecommerce/customer/Homepage"
+                element={<Homepage />}
+              />
+              <Route
+                path="/ecommerce/customer/ProductDetails"
+                element={<ProductDetails />}
+              />
+              <Route
+                path="/ecommerce/customer/ProductsFilter"
+                element={<ProductsFilter />}
+              />
               <Route path="/ecommerce/customer/Cart" element={<Cart />} />
-              <Route path="/ecommerce/customer/Checkout" element={<Checkout />} />
-              <Route path="/ecommerce/customer/ShippingInfo" element={<ShippingInfo />} />
+              <Route
+                path="/ecommerce/customer/Checkout"
+                element={<Checkout />}
+              />
+              <Route
+                path="/ecommerce/customer/ShippingInfo"
+                element={<ShippingInfo />}
+              />
               <Route path="/ecommerce/customer/Profile" element={<Profile />} />
-              <Route path="/ecommerce/customer/FavouriteStores" element={<FavouriteStores />} />
-              <Route path="/ecommerce/customer/Wishlist" element={<Wishlist />} />
-              <Route path="/ecommerce/customer/OrderTracking" element={<OrderTracking />} />
+              <Route
+                path="/ecommerce/customer/FavouriteStores"
+                element={<FavouriteStores />}
+              />
+              <Route
+                path="/ecommerce/customer/Wishlist"
+                element={<Wishlist />}
+              />
+              <Route
+                path="/ecommerce/customer/OrderTracking"
+                element={<OrderTracking />}
+              />
               <Route path="/ecommerce/customer/Invoice" element={<Invoice />} />
 
               {/* CRM Pages */}

@@ -49,7 +49,7 @@ const ContactsCreatedChart = () => {
 
   return (
     <div className="  ">
-      <h2 className="text-lg font-semibold">Contacts Created</h2>
+      <h2 className="text-3xl font-semibold">Contacts Created</h2>
       <p className="text-sm text-gray-500">Payment received across all channels</p>
       <Chart options={chartOptions} series={chartSeries} type="bar" height={350} />
     </div>

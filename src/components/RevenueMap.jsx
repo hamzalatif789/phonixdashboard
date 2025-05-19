@@ -32,7 +32,7 @@ const RevenueMap = () => {
   };
 
   return (
-    <div className="p-4 bg-white rounded-lg shadow-md">
+    <div className="p-4 rounded-lg shadow-md">
       <Chart options={options} series={[{ data: mapData }]} type="treemap" height={400} />
     </div>
   );

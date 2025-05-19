@@ -61,16 +61,16 @@ const Dashboard = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
       {/* Projection vs Actual Earnings */}
-      <div className="bg-white p-4 rounded-lg shadow-md">
+      <div className=" p-4 rounded-lg shadow-md">
         <h2 className="text-xl font-semibold">Projection vs Actual</h2>
-        <p className="text-gray-500">Actual earnings vs projected earnings</p>
+        <p className="">Actual earnings vs projected earnings</p>
         <Chart options={projectionChart.options} series={projectionChart.series} type="bar" height={300} />
       </div>
 
       {/* Returning Customer Rate */}
-      <div className="bg-white p-4 rounded-lg shadow-md">
+      <div className=" p-4 rounded-lg shadow-md">
         <h2 className="text-xl font-semibold">Returning Customer Rate</h2>
-        <p className="text-gray-500">Rate of customers returning to your shop over time</p>
+        <p className="">Rate of customers returning to your shop over time</p>
         <Chart options={customerRateChart.options} series={customerRateChart.series} type="line" height={300} />
       </div>
     </div>

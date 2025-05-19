@@ -36,7 +36,7 @@ const AdClicksChart = () => {
   };
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md">
+    <div className="py-8">
       <div className="flex justify-between items-center">
         <div>
           <h2 className="text-lg font-semibold">Ad Clicks</h2>

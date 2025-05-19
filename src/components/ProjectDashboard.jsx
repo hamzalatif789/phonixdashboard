@@ -17,9 +17,9 @@ const ProjectDashboard = () => {
   ];
 
   return (
-    <div className="p-6 bg-gray-50 min-h-screen">
+    <div className="p-6  min-h-screen">
       {/* Dashboard Header */}
-      <div className="flex justify-between items-center bg-white p-6 rounded-lg shadow-sm mb-6">
+      <div className="flex justify-between items-center  p-6 rounded-lg shadow-sm mb-6">
         <div>
           <h1 className="text-2xl font-bold">Projects Dashboard</h1>
           <p className="text-gray-500">Here’s what’s going on at your business right now</p>
@@ -30,7 +30,7 @@ const ProjectDashboard = () => {
       </div>
 
       {/* Metrics Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-black">
         <MetricCard icon={<Briefcase size={24} className="text-blue-500" />} number="32" title="Projects" subtitle="Awaiting processing" />
         <MetricCard icon={<Users size={24} className="text-green-500" />} number="94" title="Members" subtitle="Working hard" />
         <MetricCard icon={<FileText size={24} className="text-orange-500" />} number="23" title="Invoices" subtitle="Soon to be cleared" />
@@ -38,8 +38,8 @@ const ProjectDashboard = () => {
       </div>
 
       {/* Project Roadmap */}
-      <div className="mt-8 bg-white p-6 rounded-lg shadow-md">
-        <h2 className="text-2xl font-bold text-gray-800">Project: Zero Roadmap</h2>
+      <div className="mt-8 p-6 rounded-lg shadow-md">
+        <h2 className="text-2xl font-bold ">Project: Zero Roadmap</h2>
         <p className="text-gray-500">Phase 2 is now ongoing</p>
 
         {/* Toggle and Timeframe Controls */}
@@ -63,7 +63,7 @@ const ProjectDashboard = () => {
               <button
                 key={option}
                 onClick={() => setTimeframe(option)}
-                className={`px-4 py-1 rounded-lg text-sm font-semibold ${timeframe === option ? "bg-white shadow-md" : "text-gray-600"}`}
+                className={`px-4 py-1 rounded-lg text-sm font-semibold ${timeframe === option ? " shadow-md" : "text-gray-600"}`}
               >
                 {option.charAt(0).toUpperCase() + option.slice(1)}
               </button>
@@ -74,7 +74,7 @@ const ProjectDashboard = () => {
         {/* Flex Row: Roadmap + Coming Soon Section */}
         <div className="flex flex-row gap-6">
           {/* Roadmap Timeline */}
-          <div className="bg-white p-6 rounded-lg shadow-md flex-1">
+          <div className="p-6 rounded-lg shadow-md flex-1">
             {tasks.map((task, index) => (
               <div key={index} className="mb-3">
                 <span className="text-gray-700 font-semibold">{task.name}</span>
@@ -86,11 +86,11 @@ const ProjectDashboard = () => {
           </div>
 
           {/* Coming Soon Section */}
-          <div className="bg-white p-6 rounded-lg shadow-md flex-1">
+          <div className=" p-6 rounded-lg shadow-md flex-1">
             <span className="text-orange-500 font-semibold text-sm bg-orange-100 px-2 py-1 rounded-md">
               🚀 COMING SOON
             </span>
-            <h2 className="text-lg font-bold mt-2 text-gray-800">Early bird gets the warm leads!</h2>
+            <h2 className="text-lg font-bold mt-2 ">Early bird gets the warm leads!</h2>
             <p className="text-gray-500 mt-1">
               Phoenix CRM Dashboard is coming to market soon for fulfilling your every CRM-related need.
             </p>
