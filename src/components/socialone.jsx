@@ -35,7 +35,7 @@ import one16 from "@/assets/images/16.png";
 import EventsList from "./EventCard";
 import PostFeed from "./PostFeed";
 import PostCard from "./PostCard";
-import SecondndPostFeed from "./2ndpostfeed";
+import SecondndPostFeed from "./SecondPostFeed";
 
 const SocialOne = ({ event }) => {
   const photos = [one11, one12, one13, one14, one15, one16];

@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import { MoreHorizontal, Heart, MessageCircle, Share2, Reply } from "lucide-react";
-import asset16 from "@/assets/images/asset 16.webp";
-import asset17 from "@/assets/images/asset 17.webp";
-import asset18 from "@/assets/images/asset 18.webp";
 import assetProfile from "@/assets/images/23.webp";
 import assetCover from "@/assets/images/62.webp";
 import asset from "@/assets/images/59.webp";
